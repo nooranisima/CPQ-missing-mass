@@ -8,15 +8,35 @@ This is the official repository codebase for the paper: Conformal Prediction Bey
 
 ---
 
-## 🔧 Code Availability
+## 🔧 Repository Structure
 
-The code is not yet available but will be released here soon.  
-Please check back shortly or watch the repository for updates.
-
----
-
+```text
+.
+├── data/               # data generated from the models for each dataset for reproducibility
+├── scripts/
+│   ├── sampling_module.py  # functions needed to simulate the online optimal sampling module + clustering from the data
+│   └── calibration_module.py  # optimal calibration and prediction set construction
+│   └── suboptimal_baselines.py  # includes the sub-optimal, yet valid calibration and prediction set construction for fine-grained comparison 
+├── cpq_experiments          # Run the experiments from the data, and save the results + reproduce the figures in the paper
+└── README.md           # you are here!
+```
 ## 📬 Contact
 
 For questions or updates, please contant:
 *nooranis@seas.upenn.edu*
 
+
+## Citation
+
+If you find this repository useful for your research, please consider citing:
+
+```bibtex
+@misc{noorani2025conformalpredictionseenmissing,
+  title        = {Conformal Prediction Beyond the Seen: A Missing Mass Perspective for Uncertainty Quantification in Generative Models},
+  author       = {Sima Noorani and Shayan Kiyani and George Pappas and Hamed Hassani},
+  year         = {2025},
+  eprint       = {2506.05497},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.LG},
+  url          = {https://arxiv.org/abs/2506.05497},
+}
