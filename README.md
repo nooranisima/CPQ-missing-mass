@@ -13,6 +13,7 @@ This is the official repository codebase for the paper: Conformal Prediction Bey
 ```text
 .
 ├── data/               # data generated from the models for each dataset for reproducibility
+├── results/            # final results from running the algorithm for different coverage levels (1-\alpha)
 ├── scripts/
 │   ├── sampling_module.py  # functions needed to simulate the online optimal sampling module + clustering from the data
 │   └── calibration_module.py  # optimal calibration and prediction set construction
